@@ -3,10 +3,9 @@ import requests
 from json import loads
 import discord
 from discord.ext import commands
-
+import os
 
 client =  discord.Client()
-token = 'ODA4OTQyMjc0MjAwNDY5NTI1.YCN4Mw.rRRi-JHq-nPHgQc1y3CNygTRXYw'
 
 Url ='https://api.twitch.tv/helix/streams?user_login='
 AutURL ='https://id.twitch.tv/oauth2/token'
@@ -49,5 +48,5 @@ async def on_ready():
             i = 0
         else :i+=1
 
-
+access_token = os.environ['BOT_TOKEN']
 client.run(token)
