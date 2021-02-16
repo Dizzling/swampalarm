@@ -1,4 +1,1 @@
 discord.py
-requests.py
-loads.py
-commands.py
